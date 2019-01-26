@@ -18,20 +18,20 @@ static TIM_HandleTypeDef  TimHandle;
 
 void microsInit(void)
 {
+  uint32_t uwPrescalerValue = 0;
+
   __HAL_RCC_TIM2_CLK_ENABLE();
 
 
   /* Set TIMx instance */
   TimHandle.Instance = TIM2;
 
-  /* Initialize TIM3 peripheral as follow:
-         + Period = 10000 - 1
-         + Prescaler = ((SystemCoreClock/2)/10000) - 1
-         + ClockDivision = 0
-         + Counter direction = Up
-   */
+
+  // Compute the prescaler value to have TIMx counter clock equal to 1Mh
+  uwPrescalerValue = (uint32_t)((SystemCoreClock / 2) / 1000000) - 1;
+
   TimHandle.Init.Period         = 0xFFFFFFFF;
-  TimHandle.Init.Prescaler      = (SystemCoreClock/2/1000000)-1;
+  TimHandle.Init.Prescaler      = uwPrescalerValue;
   TimHandle.Init.ClockDivision  = 0;
   TimHandle.Init.CounterMode    = TIM_COUNTERMODE_UP;
 
