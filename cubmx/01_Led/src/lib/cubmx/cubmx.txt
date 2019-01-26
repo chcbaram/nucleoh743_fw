@@ -1,0 +1,66 @@
+Configuration	cubmx
+STM32CubeMX 	5.0.1
+Date	01/22/2019
+MCU	STM32H743ZITx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+RCC	BYPASS Clock Source	RCC_OSC_IN	PH0-OSC_IN (PH0)
+RCC	BYPASS Clock Source	RCC_OSC_OUT	PH1-OSC_OUT (PH1)
+SYS	Serial Wire	SYS_JTCK-SWCLK	PA14 (JTCK/SWCLK)
+SYS	Serial Wire	SYS_JTMS-SWDIO	PA13 (JTMS/SWDIO)
+SYS	Power Voltage Detector In (Internal analog voltage)	SYS_V_PVD_IN	VP_SYS_V_PVD_IN
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+23	PH0-OSC_IN (PH0)	RCC_OSC_IN	
+24	PH1-OSC_OUT (PH1)	RCC_OSC_OUT	
+105	PA13 (JTMS/SWDIO)	SYS_JTMS-SWDIO	
+109	PA14 (JTCK/SWCLK)	SYS_JTCK-SWCLK	
+137	PB7	GPIO_Output	
+PERIPHERALS	MODES	FUNCTIONS	PINS
+RCC	BYPASS Clock Source	RCC_OSC_IN	PH0-OSC_IN (PH0)
+RCC	BYPASS Clock Source	RCC_OSC_OUT	PH1-OSC_OUT (PH1)
+SYS	Serial Wire	SYS_JTCK-SWCLK	PA14 (JTCK/SWCLK)
+SYS	Serial Wire	SYS_JTMS-SWDIO	PA13 (JTMS/SWDIO)
+SYS	Power Voltage Detector In (Internal analog voltage)	SYS_V_PVD_IN	VP_SYS_V_PVD_IN
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+23	PH0-OSC_IN (PH0)	RCC_OSC_IN	
+24	PH1-OSC_OUT (PH1)	RCC_OSC_OUT	
+105	PA13 (JTMS/SWDIO)	SYS_JTMS-SWDIO	
+109	PA14 (JTCK/SWCLK)	SYS_JTCK-SWCLK	
+137	PB7	GPIO_Output	
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : cubmx
+Project Folder : D:\git\nucleoh743_fw\01_Led\src\lib\cubmx
+Toolchain / IDE : Makefile
+Firmware Package Name and Version : STM32Cube FW_H7 V1.3.0
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy only the necessary library files
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : No
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : 
+
+
+
+
+
